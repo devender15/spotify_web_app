@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify | Best Web music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/logo.png">
+</head>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li class="brand"><img src="icons/logo.png" alt="Spotify logo">Spotify</li>
+            <li>Home</li>
+            <li><a href="https://support.spotify.com/in-en/" style="color:white;text-decoration:none;" target="_blank">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="main-heading">Best of NCS</h1>
+        <div class="song-list">
+            <div class="song-item">
+                <img width="50" src="cover/cover.jpg" height="40" alt="cover">
+                <span class="song-name">first song</span><span class="songlistplay"><span class="timestamp"><span class="duration">05:34</span><i id="0"  style="margin-right:15px;" class="far song-item-play fa-1x fa-play-circle"></i></span>
+            </div>
+
+            <div class="song-item">
+                <img width="50" src="cover/cover.jpg" height="40" alt="cover">
+                <span class="song-name">second song</span><span class="songlistplay"><span class="timestamp"><span class="duration">05:34</span><i id="1"  style="margin-right:15px;" class="far song-item-play fa-1x fa-play-circle"></i></span>
+            </div>
+
+            <div class="song-item">
+                <img width="50" src="cover/cover.jpg" height="40" alt="cover">
+                <span class="song-name">third song</span><span class="songlistplay"><span class="timestamp"><span class="duration">05:34</span><i id="2"  style="margin-right:15px;" class="far song-item-play fa-1x fa-play-circle"></i></span>
+            </div>
+
+            <div class="song-item">
+                <img width="50" src="cover/cover.jpg" height="40" alt="cover">
+                <span class="song-name">fourth song</span><span class="songlistplay"><span class="timestamp"><span class="duration">05:34</span><i id="3"  style="margin-right:15px;" class="far song-item-play fa-1x fa-play-circle"></i></span>
+            </div>
+        </div>
+        <div class="song-banner">
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" value="0" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="master_play"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+
+        <div class="song-info">
+            <img src="icons/cover.gif" id="gif" width="42px" alt="music gif"><span id="master-song-name"></span>
+        </div>
+
+        <div class="volume-bar">
+            <img src="icons/playing.png" id="volume_stat_icon" alt="playing_sound_image" width="42px" style="cursor: pointer;">
+            <input type="range" name="volume" value="50" onclick="change_vol()" id="volume_btn" min="0" max="100">
+        </div>
+
+
+    </div>
+
+<script src="https://kit.fontawesome.com/1ec4f8a257.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
